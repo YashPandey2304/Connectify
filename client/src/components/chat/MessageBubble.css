@@ -1,0 +1,43 @@
+.msg-row {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.msg-row.own {
+  justify-content: flex-end;
+}
+
+.msg-bubble {
+  max-width: 65%;
+  padding: 9px 13px;
+  border-radius: 14px;
+  position: relative;
+}
+
+.msg-bubble.own {
+  background: var(--accent);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+.msg-bubble.other {
+  background: #fff;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-bottom-left-radius: 4px;
+}
+
+.msg-content {
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.msg-time {
+  display: block;
+  font-size: 10px;
+  margin-top: 4px;
+  opacity: 0.7;
+  text-align: right;
+}

@@ -1,0 +1,150 @@
+.call-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(23, 25, 35, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.call-panel {
+  background: var(--ink);
+  border-radius: 16px;
+  padding: 36px 32px;
+  width: 280px;
+  text-align: center;
+  color: #fff;
+}
+
+.call-avatar-ring {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: var(--accent-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.call-failed-icon {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: rgba(193, 68, 61, 0.18);
+  color: #e2857f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.call-avatar-initial {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.call-remote-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.call-status-text {
+  font-size: 13px;
+  color: #a3a6b3;
+  margin-top: 4px;
+}
+
+.call-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.call-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.call-btn-accept {
+  background: var(--accent);
+  color: #fff;
+}
+
+.call-btn-accept:hover {
+  background: var(--accent-hover);
+}
+
+.call-btn-decline {
+  background: var(--danger);
+  color: #fff;
+}
+
+.call-btn-decline:hover {
+  opacity: 0.9;
+}
+
+/* --- Video call layout --- */
+.call-overlay-video {
+  background: #000;
+}
+
+.call-video-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.call-remote-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #14161c;
+}
+
+.call-local-video {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: #14161c;
+}
+
+.call-video-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.call-video-info .call-remote-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.call-video-info .call-status-text {
+  color: #e2e2e6;
+  margin-top: 2px;
+}
+
+.call-actions-video {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
+}

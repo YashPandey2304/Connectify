@@ -1,0 +1,95 @@
+.group-info-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.group-info-member-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.group-info-member-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.group-info-member-row:last-child {
+  border-bottom: none;
+}
+
+.group-info-member-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.group-info-member-name {
+  font-size: 13px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.group-info-admin-badge {
+  font-size: 10px;
+  background: var(--accent-tint);
+  color: var(--accent);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.group-info-remove-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--danger);
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.group-info-remove-btn:hover {
+  background: var(--danger-tint);
+}
+
+.group-info-add-section {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.group-info-add-toggle {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.group-info-add-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.group-info-add-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 4px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+.group-info-add-row:hover {
+  background: var(--paper-dim);
+}

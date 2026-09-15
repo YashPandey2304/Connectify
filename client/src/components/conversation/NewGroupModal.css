@@ -1,0 +1,75 @@
+.new-group-field {
+  margin-bottom: 16px;
+}
+
+.new-group-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.new-group-field input[type="text"] {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.new-group-user-list {
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.new-group-user-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.new-group-user-row:last-child {
+  border-bottom: none;
+}
+
+.new-group-user-row:hover {
+  background: var(--paper-dim);
+}
+
+.new-group-status {
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 8px;
+}
+
+.new-group-error {
+  color: var(--danger);
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.new-group-submit {
+  width: 100%;
+  padding: 10px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.new-group-submit:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.new-group-submit:disabled {
+  opacity: 0.6;
+}

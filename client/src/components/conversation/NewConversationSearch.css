@@ -1,0 +1,65 @@
+.new-conv-search {
+  position: relative;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.new-conv-input {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: #f2f2f2;
+  font-size: 13px;
+}
+
+.new-conv-input::placeholder {
+  color: #8b8e99;
+}
+
+.new-conv-results {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  top: calc(100% + 4px);
+  background: var(--ink-soft);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-height: 260px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.new-conv-status {
+  padding: 12px;
+  font-size: 12px;
+  color: #8b8e99;
+}
+
+.new-conv-result {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  text-align: left;
+}
+
+.new-conv-result:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.new-conv-result-name {
+  font-size: 13px;
+  color: #f2f2f2;
+  font-weight: 500;
+}
+
+.new-conv-result-email {
+  font-size: 11px;
+  color: #8b8e99;
+}

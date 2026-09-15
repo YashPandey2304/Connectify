@@ -1,0 +1,70 @@
+.conv-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.conv-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  text-align: left;
+  width: 100%;
+  color: inherit;
+}
+
+.conv-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.conv-item.active {
+  background: rgba(47, 143, 130, 0.18);
+}
+
+.conv-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.conv-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.conv-item-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f2f2f2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.conv-item-time {
+  font-size: 11px;
+  color: #8b8e99;
+  flex-shrink: 0;
+}
+
+.conv-item-preview {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #9a9dac;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.conv-list-empty {
+  padding: 24px 16px;
+  color: #8b8e99;
+  font-size: 13px;
+  line-height: 1.5;
+}

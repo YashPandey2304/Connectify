@@ -1,0 +1,39 @@
+.msg-input-bar {
+  display: flex;
+  gap: 10px;
+  padding: 14px 20px;
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+
+.msg-input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  background: var(--paper);
+}
+
+.msg-input:focus {
+  border-color: var(--accent);
+}
+
+.msg-send-btn {
+  padding: 0 20px;
+  border: none;
+  border-radius: 20px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.msg-send-btn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.msg-send-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
